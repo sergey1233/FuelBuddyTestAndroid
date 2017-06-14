@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="301dp"
+    android:layout_height="36dp"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="201dp"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_marker">
+
+        <LinearLayout
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/marker_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/logo_gasprom"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/marker_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="9sp"
+                fontPath="fonts/helveticaneuecyr-roman.otf"
+                tools:text="ул. Садовническая, 57"/>
+
+            <TextView
+                android:id="@+id/marker_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="11sp"
+                fontPath="fonts/helveticaneuecyr-roman.otf"
+                tools:text="35,5 ₽"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/marker_like_btn"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_like"/>
+
+        <ImageView
+            android:id="@+id/marker_direction_btn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_direction_light"/>
+
+    </LinearLayout>
+
+</LinearLayout>
